@@ -1,28 +1,13 @@
 <template>
 	<view class="content">
-		<image class="logo" src="../../static/logo.png"></image>
+		<!-- <uv-icon name="photo" size="30" color="#909399"></uv-icon> -->
 		<view>
-			<text class="title">{{ title }}</text>
+			<text class="title">asdads</text>
 		</view>
 	</view>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-
-export default Vue.extend({
-	data() {
-		return {
-			title: 'Hello'
-		}
-	},
-	onLoad() {
-
-	},
-	methods: {
-
-	}
-});
 </script>
 
 <style>

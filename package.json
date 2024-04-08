@@ -48,6 +48,7 @@
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
   },
   "dependencies": {
+    "@climblee/uv-ui": "^1.1.20",
     "@dcloudio/uni-app": "^2.0.2-4000820240401001",
     "@dcloudio/uni-app-plus": "^2.0.2-4000820240401001",
     "@dcloudio/uni-h5": "^2.0.2-4000820240401001",
@@ -81,7 +82,7 @@
     "@dcloudio/uni-automator": "^2.0.2-4000820240401001",
     "@dcloudio/uni-cli-i18n": "^2.0.2-4000820240401001",
     "@dcloudio/uni-cli-shared": "^2.0.2-4000820240401001",
-    "@dcloudio/uni-helper-json": "*",
+    "@dcloudio/uni-helper-json": "^1.0.13",
     "@dcloudio/uni-migration": "^2.0.2-4000820240401001",
     "@dcloudio/uni-template-compiler": "^2.0.2-4000820240401001",
     "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.2-4000820240401001",
@@ -97,6 +98,8 @@
     "cross-env": "^7.0.2",
     "jest": "^25.4.0",
     "postcss-comment": "^2.0.0",
+    "sass": "^1.74.1",
+    "sass-loader": "^10.5.2",
     "typescript": "~4.5.5",
     "vue-template-compiler": ">= 2.6.14 < 2.7"
   },
