@@ -14,6 +14,7 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style lang="scss">
+@import '@climblee/uv-ui/index.scss';
 /*每个页面公共css */
 </style>
