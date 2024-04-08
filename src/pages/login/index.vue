@@ -4,8 +4,8 @@
     <view class="formContent">
       <view class="content">
         <view class="duanxin">
-          <uv-input placeholder="请输入内容" border="surround" v-model="formData.phone"></uv-input>
-          <uv-input placeholder="后置插槽">
+          <uv-input placeholder="手机号" v-model="formData.phone"></uv-input>
+          <uv-input placeholder="验证码" v-model="formData.code">
             <!-- vue3模式下必须使用v-slot:suffix -->
             <template v-slot:suffix>
               <uv-code ref="uCode" @change="codeChange" seconds="20" changeText="X秒重新获取哈哈哈"></uv-code>
@@ -13,6 +13,18 @@
             </template>
           </uv-input>
         </view>
+        <uv-button class="loginBtn" type="primary" text="登陆"></uv-button>
+        <uv-row class="mt24">
+          <uv-col>
+            <uv-checkbox-group v-model="checkboxValue" >
+              <uv-checkbox name="agree">
+                <view>
+                  同意
+                </view>
+              </uv-checkbox>
+            </uv-checkbox-group>
+          </uv-col>
+        </uv-row>
       </view>
     </view>
 
@@ -45,8 +57,10 @@ export default {
       tips: '',
       value: '内容',
       formData: {
-        phone: ''
-      }
+        phone: '',
+        code: ''
+      },
+      checkboxValue: []
     }
   },
   methods: {
@@ -81,8 +95,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .login {
+  .mt24 {
+    margin-top: 24rpx;
+  }
   padding: 24rpx;
   padding-top: 120rpx;
   display: flex;
@@ -100,7 +117,7 @@ export default {
     flex: 1;
 
     .content {
-      margin: 0 48rpx;
+      padding: 0 48rpx;
       margin-top: 140rpx;
     }
 
@@ -108,6 +125,10 @@ export default {
       display: flex;
       flex-direction: column;
       gap: 24rpx;
+    }
+
+    .loginBtn {
+      margin-top: 40rpx;
     }
   }
 }
