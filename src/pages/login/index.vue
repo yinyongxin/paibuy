@@ -101,7 +101,7 @@ export default {
     margin-top: 24rpx;
   }
   padding: 24rpx;
-  padding-top: 18s0rpx;
+  padding-top: 180rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
